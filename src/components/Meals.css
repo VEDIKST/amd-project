@@ -1,0 +1,129 @@
+.meals-page {
+  position: relative;
+  min-height: 100%;
+}
+
+.header-image-container {
+  height: 350px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.meals-content-wrapper {
+  position: relative;
+  background-color: var(--card-bg);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: -40px;
+  padding: 30px 20px;
+  min-height: 500px;
+  z-index: 2;
+}
+
+.plan-header {
+  margin-bottom: 24px;
+}
+
+.plan-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.calories-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.day-header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.day-badge {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.meals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.meal-card {
+  display: flex;
+  align-items: center;
+  background-color: var(--pill-gray);
+  padding: 12px;
+  border-radius: var(--border-radius-lg);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.meal-card:hover {
+  transform: scale(1.02);
+}
+
+.meal-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.meal-info {
+  flex: 1;
+}
+
+.meal-info h4 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.meal-meta {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.meal-meta span {
+  margin-left: 4px;
+}
+
+.fixed-bottom-action {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: linear-gradient(transparent, var(--card-bg) 20%);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+.fixed-bottom-action .btn-primary-dark {
+  width: 100%;
+}

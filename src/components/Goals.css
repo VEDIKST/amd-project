@@ -1,0 +1,150 @@
+.goals-view {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.goals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goals-header h2 {
+  font-size: 18px;
+  color: var(--text-dark);
+}
+
+.icon-btn.back-btn {
+  font-size: 14px;
+}
+
+.goal-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.flame-icon {
+  color: var(--primary-lime);
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.goal-display h1 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.goal-display p {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.slider-container {
+  padding: 0 24px;
+  position: relative;
+}
+
+.calorie-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(to right, var(--primary-lime), var(--light-lime));
+  border-radius: 24px;
+  outline: none;
+  opacity: 0.9;
+  transition: opacity .2s;
+}
+
+.calorie-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: #111827;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.macro-targets {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.macro-card {
+  flex: 1;
+  background: white;
+  padding: 24px 16px;
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.macro-card h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.macro-card p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+}
+
+.dot-lime { background: var(--primary-lime); }
+.dot-white { background: white; border: 1px solid #E5E7EB; }
+.dot-dark { background: #111827; }
+
+.track-status {
+  background: #E5E7EB;
+  padding: 16px;
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.check-icon {
+  background: var(--text-dark);
+  color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.btn-set-goal {
+  background: var(--text-dark);
+  color: white;
+  padding: 20px;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 16px;
+  box-shadow: 0 10px 20px rgba(17,24,39, 0.2);
+}

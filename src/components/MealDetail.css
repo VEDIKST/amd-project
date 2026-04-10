@@ -1,0 +1,143 @@
+.meal-detail-page {
+  position: relative;
+  min-height: 100%;
+}
+
+.detail-header-image {
+  height: 400px;
+  position: relative;
+}
+
+.detail-header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  z-index: 10;
+}
+
+.white-icon {
+  color: white !important;
+}
+
+.detail-content-wrapper {
+  padding: 30px 20px;
+}
+
+.macro-pills {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -80px;
+  margin-bottom: 30px;
+  z-index: 5;
+  position: relative;
+}
+
+.macro-pill {
+  flex: 1;
+  background-color: white;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  margin: 0 5px;
+}
+
+.pill-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid #f3f4f6;
+}
+
+.macro-pill.purple .pill-circle { border-color: var(--macro-purple); }
+.macro-pill.green .pill-circle { border-color: var(--macro-green); }
+.macro-pill.blue .pill-circle { border-color: var(--macro-blue); }
+.macro-pill.orange .pill-circle { border-color: var(--macro-orange); }
+
+.pill-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pill-label {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+.pill-value {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.detail-title-section {
+  margin-bottom: 24px;
+}
+
+.detail-title-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.detail-stats {
+  display: flex;
+  gap: 16px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tags-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: var(--pill-gray);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.ingredients-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.ingredient-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.ing-name {
+  font-weight: 500;
+}
+
+.ing-qty {
+  color: var(--text-muted);
+}

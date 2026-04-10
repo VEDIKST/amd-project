@@ -1,0 +1,66 @@
+:root {
+  /* App Background (Lavender) */
+  --bg-color: #E6E1FA; 
+  --card-bg: #FFFFFF;
+  
+  /* Macro Colors */
+  --macro-green: #B3F5B8;
+  --macro-blue: #C3E9FD;
+  --macro-orange: #FFDDA6;
+  --macro-purple: #BBA9F5;
+
+  /* Button / Text Colors */
+  --text-dark: #121212;
+  --text-muted: #8E8D9B;
+  --btn-dark: #18181A;
+
+  /* Additional Grays */
+  --border-gray: #F3F4F6;
+  --pill-gray: #F7F7F7;
+  
+  /* Shadows & Layout */
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+  --shadow-float: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  
+  --border-radius-xl: 32px;
+  --border-radius-lg: 24px;
+  --border-radius-md: 16px;
+  --border-radius-sm: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Custom Scrollbar for elements */
+::-webkit-scrollbar {
+  display: none;
+}
